@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../constants/app_routes.dart';
 import '../controllers/todo_controller.dart';
 
 class HomeView extends StatelessWidget {
@@ -67,7 +68,7 @@ class HomeView extends StatelessWidget {
                   },
                 ),
                 onTap: () {
-                  // TODO: nav to edit
+                  Get.toNamed(AppRoutes.addEditTodo, arguments: todo);
                 },
               ),
             );
@@ -76,7 +77,7 @@ class HomeView extends StatelessWidget {
       }),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // TODO: nav to add
+          Get.toNamed(AppRoutes.addEditTodo);
         },
         child: const Icon(Icons.add),
       ),
