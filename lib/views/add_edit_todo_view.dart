@@ -80,18 +80,19 @@ class AddEditTodoView extends StatelessWidget {
                   return null;
                 },
               ),
-              const SizedBox(height: 24),
-              SizedBox(
-                width: double.infinity,
-                child: FilledButton(
-                  onPressed: _saveTodo,
-                  child: Text(todo == null ? 'Save' : 'Update'),
-                ),
-              ),
             ],
           ),
         ),
       ),
+      floatingActionButton: Container(
+        margin: const EdgeInsets.all(16.0),
+        width: double.infinity,
+        child: FilledButton(
+          onPressed: _saveTodo,
+          child: Text(todo == null ? 'Save' : 'Update'),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
