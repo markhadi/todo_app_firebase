@@ -43,8 +43,8 @@ class TodoController extends GetxController {
     try {
       await _todoRepository.addTodo(todo);
       _snackbarHelper.showSnackbar(
-        title: 'Sukses',
-        message: 'Tugas berhasil ditambahkan',
+        title: 'Success',
+        message: 'Task successfully added',
         status: Status.success,
       );
     } catch (e) {
@@ -60,8 +60,8 @@ class TodoController extends GetxController {
     try {
       await _todoRepository.updateTodo(todo);
       _snackbarHelper.showSnackbar(
-        title: 'Sukses',
-        message: 'Tugas berhasil diperbarui',
+        title: 'Success',
+        message: 'Task updated successfully',
         status: Status.success,
       );
     } catch (e) {
@@ -77,8 +77,8 @@ class TodoController extends GetxController {
     try {
       await _todoRepository.deleteTodo(id);
       _snackbarHelper.showSnackbar(
-        title: 'Sukses',
-        message: 'Tugas berhasil dihapus',
+        title: 'Success',
+        message: 'Task successfully deleted',
         status: Status.success,
       );
     } catch (e) {
