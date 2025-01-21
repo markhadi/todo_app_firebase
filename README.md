@@ -24,3 +24,7 @@
 - As a user, I want to use a simple and easy-to-use app interface so that I can quickly understand how to manage my to-do list.
 - As a user, I want to see a loading indicator as the app processes data so that I know the app is working.
 - As a user, I want input validation that ensures I don't submit an empty form so that the tasks I create have complete information.
+
+## Screenshot
+![image](https://github.com/user-attachments/assets/50fadf4b-2de1-44c5-9bfd-2facaf35c089)
+
