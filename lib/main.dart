@@ -1,7 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import 'bindings/todo_binding.dart';
 import 'constants/app_constants.dart';
+import 'constants/app_routes.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -18,15 +21,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      initialBinding: TodoBinding(),
       title: Constants.appTitle,
       theme: Constants.themeData,
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      initialRoute: AppRoutes.home,
+      getPages: AppRoutes.routes,
     );
   }
 }
