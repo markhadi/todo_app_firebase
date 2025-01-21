@@ -26,5 +26,6 @@
 - As a user, I want input validation that ensures I don't submit an empty form so that the tasks I create have complete information.
 
 ## Screenshot
-![image](https://github.com/user-attachments/assets/50fadf4b-2de1-44c5-9bfd-2facaf35c089)
+![image](https://github.com/user-attachments/assets/d0da7562-31ea-43eb-9ed9-b6af8dbdd38a)
+
 
