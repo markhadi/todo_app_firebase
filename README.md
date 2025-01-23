@@ -28,4 +28,51 @@
 ## Screenshot
 ![image](https://github.com/user-attachments/assets/d0da7562-31ea-43eb-9ed9-b6af8dbdd38a)
 
+# Todo App Firebase
 
+## Project Overview
+A Flutter todo application using Firebase for backend and state management.
+
+## Prerequisites
+- Flutter SDK (latest stable version)
+- Android Studio or VS Code
+- Firebase account
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/markhadi/todo_app_firebase.git
+cd todo_app_firebase
+```
+
+### 2. Install Dependencies
+```bash
+flutter pub get
+```
+
+### 3. Firebase Configuration
+1. Create a new Firebase project in the Firebase Console
+2. Enable Cloud Firestore
+3. Update Firestore Rules:
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+```
+
+### 4. FlutterFire Setup
+```bash
+flutterfire configure --project=your-project-id
+```
+- Android Application ID: `com.example.todo_app_firebase`
+
+### 5. Run the Application
+```bash
+flutter run
+```
